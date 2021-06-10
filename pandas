@@ -1,0 +1,13 @@
+import pandas as pd 
+
+#Do this in the python shell
+df=pd.read_csv('data.CSV')
+df.head(10)
+
+
+
+#creating a dataframe in python.
+
+data={'Name':['Paul','Bob','Sydo','Ali'], 'Age':[23,30,40,50]}
+df=pd.DataFrame(data)
+df.to_csv('fromdf.CSV', index=False)
